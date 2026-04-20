@@ -1,6 +1,6 @@
 context:
   name: mcstastox
-  version: 0.0.11
+  version: "0.0.12"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/mcstastox-${{ version }}.tar.gz
-  sha256: 334eb121d30b10a01fd306a80c94ce8194b223f6f17939fdbe32828f850aee78
+  sha256: 8ebf3023d06e4a762cfdf5d84925b23d5b8dd396e703fa40477ac205672bb074
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
     - pip
   run:
-    - python >=${{ python_min }} 
+    - python >=${{ python_min }}
     - h5py
     - numpy
 
